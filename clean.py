@@ -53,7 +53,7 @@ formatted_time = current_time.strftime("%S_%M_%H_%d_%m_%Y")
 print('[INFO] Saving file...')
 df = pd.DataFrame({"sentences": sentences})
 
-file_name = f'dev_{fname}_{lname}_{formatted_time}.txt'
+file_name = f'dev_{fname}_{lname}_{formatted_time}.csv'
 df.to_csv(f'./export/{file_name}')
 
 print(f'[SUCCESS] File saved as {file_name}')
